@@ -8,7 +8,13 @@
     },
     "require": {
         "neos/neos": "^5.3 || ^7.0 || ^8.0",
-        "flownative/openidconnect-client": "^3.0"
+        "flownative/openidconnect-client": "dev-main@dev"
+    },
+    "repositories": {
+        "flow.openidconnect.client": {
+            "type": "git",
+            "url": "https://github.com/etlam/flow-openidconnect-client.git"
+        }
     },
     "autoload": {
         "psr-4": {
@@ -37,5 +43,10 @@
             "Neos.Flow-20201205172733",
             "Neos.Flow-20201207104500"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "neos/composer-plugin": true
+        }
     }
 }
